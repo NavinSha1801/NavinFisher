@@ -1,12 +1,11 @@
 <!-- Zphisher -->
-
 <p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
 
 ##
 
 <h3><p align="center">Disclaimer</p></h3>
 
-<i>Any actions and or activities related to <b>Zphisher</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The contributors will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
+<i>Any actions and or activities related to <b>NavinFisher</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The contributors will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
 
 <b>This toolkit contains materials that can be potentially damaging or dangerous for social media</b>. Refer to the laws in your province/country before accessing, using,or in any other way utilizing this in a wrong way.
 
@@ -43,7 +42,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
   $ bash zphisher.sh
   ```
 
-- On first launch, It'll install the dependencies and that's it. ***NFisher*** is installed.
+- On first launch, It'll install the dependencies and that's it. ***zphisher*** is installed.
 
 ##
 
@@ -51,12 +50,12 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 <details>
   <summary><h3>Dependencies</h3></summary>
 
-***NFisher*** requires following programs to run properly - 
+***zphisher*** requires following programs to run properly - 
 - `git`
 - `curl`
 - `php`
 
-> All the dependencies will be installed automatically when you run ***NFisher*** for the first time.
+> All the dependencies will be installed automatically when you run ***zphisher*** for the first time.
 </details>
 
 <details>
