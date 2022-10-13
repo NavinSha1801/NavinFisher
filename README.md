@@ -1,4 +1,6 @@
 <!-- Zphisher -->
+<p align="center"><b>Special Thanks to : Aishwarya Dave</b></p>
+
 <p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
 
 ##

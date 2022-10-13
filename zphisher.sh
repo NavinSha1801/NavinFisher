@@ -111,7 +111,7 @@ if [[ -e ".server/.loclx" ]]; then
 fi
 
 if [[ -e ".server/.cld.log" ]]; then
-	rm -rf ".server/.cld.log"
+	rm -rf ".server/.cld.log"	
 fi
 
 ## Script termination
