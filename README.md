@@ -1,25 +1,5 @@
 <!-- Zphisher -->
 
-<p align="center">
-  <img src=".github/misc/logo.png">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.2-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Author-htr--tech-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
-  <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-  <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhtr-tech%2Fzphisher&title=Visitors&edge_flat=false"/></a>
-</p>
-
 <p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
 
 ##
@@ -63,48 +43,20 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
   $ bash zphisher.sh
   ```
 
-- On first launch, It'll install the dependencies and that's it. ***Zphisher*** is installed.
+- On first launch, It'll install the dependencies and that's it. ***NFisher*** is installed.
 
 ##
 
-### Installation (Termux)
-You can easily install zphisher in Termux by using tur-repo
-```
-$ apt install tur-repo
-$ apt install zphisher
-$ zphisher
-```
-### A Note : 
-***Termux discourages hacking*** .. So never discuss anything related to *zphisher* in any of the termux discussion groups. For more check : [wiki](https://wiki.termux.com/wiki/Hacking)
-
-##
-
-### Installation via ".deb" file
-
-- Download `.deb` files from the [**Latest Release**](https://github.com/NavinSha1801/NavinFisher.git)
-- If you are using ***termux*** then download the `*_termux.deb`
-
-- Install the `.deb` file by executing
-  ```
-  apt install <your path to deb file>
-  ```
-  Or
-  ```
-  $ dpkg -i <your path to deb file>
-  $ apt install -f
-  ```
-
-##
 
 <details>
   <summary><h3>Dependencies</h3></summary>
 
-<b>Zphisher</b> requires following programs to run properly - 
+***NFisher*** requires following programs to run properly - 
 - `git`
 - `curl`
 - `php`
 
-> All the dependencies will be installed automatically when you run **Zphisher** for the first time.
+> All the dependencies will be installed automatically when you run ***NFisher*** for the first time.
 </details>
 
 <details>
